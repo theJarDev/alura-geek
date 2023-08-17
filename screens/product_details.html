@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/svg+xml" href="../assets/img/sports_esports_black_24dp 1.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AluraGeek</title>
+    <link 
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" 
+      rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/base/base.css">
+    <link rel="stylesheet" href="../assets/css/componentes/header.css">
+    <link rel="stylesheet" href="../assets/css/componentes/footer.css">
+    <link rel="stylesheet" href="../assets/css/componentes/productos.css">
+    <link rel="stylesheet" href="../assets/css/product-details.css">
+</head>
+<body>
+    <header class="header container">
+        <div class="header__content">
+          <div class="header__content--logo">
+            <img src="../assets/img/sports_esports_black_24dp 1.svg" alt="logo-mando">
+            <img src="../assets/img/Texto.svg" alt="logo-text">
+          </div>
+          <div class="header__content--search">
+            <input type="search" placeholder="¿Qué deseas buscar?" class="header__content--search--input" data-searchInput>
+            <button class="header__content--search--btn" data-searchBtn><img src="../assets/img/Icone.svg" alt="icono-buscar"></button>
+          </div>
+        </div>
+        <!-- <a href="./screens/login.html" class="header__loginBtn">Login</a> -->
+      </header>
+      <main>
+        <section data-productDetails>
+
+          
+            
+        </section>
+        <section class="products container">
+            <div class="category">
+                <div class="category__name">
+                  <h3 class="category__name--title">Productos similares</h3>
+                </div>
+                <div class="category__products" data-products>
+                  
+
+
+                </div>
+              </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="footer__aboutUs">
+          <img src="../assets/img/Logo-aluraGeek.png" alt="Logo AluraGeek" class="footer__aboutUs--logo">
+          <ul class="footer__aboutUs--list">
+            <li class="footer__aboutUs--list-item"><a href="#">Quienes somos</a></li>
+            <li class="footer__aboutUs--list-item"><a href="#">Política de privacidad</a></li>
+            <li class="footer__aboutUs--list-item"><a href="#">Programa de fidelidad</a></li>
+            <li class="footer__aboutUs--list-item"><a href="#">Nuestras Tiendas</a></li>
+            <li class="footer__aboutUs--list-item"><a href="#">Quiero ser franquiciado</a></li>
+            <li class="footer__aboutUs--list-item"><a href="#">Anúncie aquí</a></li>
+          </ul>
+          <form action="#" class="footer__aboutUs--form">
+            <h4 class="form__title">Hable con nosotros</h4>
+            <input name="name" id="name" type="text" class="input form__name--input " placeholder="Nombre">
+            <input name="message" id="message" type="text" class="input form__message--input" placeholder="Escribe tu mensaje">
+            <input type="submit" value="Enviar mensaje" class="button">
+          </form>
+        </div>
+        <div class="footer__aboutDev">
+          <p class="footer__aboutDev--info">
+            Desarrollado por Christopher González
+            <br>
+            2023
+          </p>
+        </div>
+      </footer>
+
+      <script type="module" src="../controllers/getSearchInfo.controller.js"></script>
+      <script type="module" src="../controllers/productDetails.controller.js"></script>
+      <script type="module" src="../controllers/similarProducts.controller.js"></script>
+</body>
+</html>

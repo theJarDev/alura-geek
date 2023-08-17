@@ -1,0 +1,21 @@
+.product__id {
+    color: var(--gris-100);
+    font-size: .875rem;
+    font-weight: 500;
+}
+
+.parent {
+    width: 11rem;
+    height: 10.875rem;
+    position: absolute;
+}
+
+.edit__btn {
+    float: right;
+    padding: .5rem;
+}
+
+.delete__btn {
+    float: right;
+    padding: .5rem;
+}

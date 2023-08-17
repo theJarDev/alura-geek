@@ -1,0 +1,41 @@
+.product-details {
+    background-color: var(--gris-05);
+    display: flex;
+    padding-top: 4rem;
+    gap: 1rem;
+}
+
+.product-details__image {
+    width: 35rem;
+    height: 31.25rem;
+    /* height: 25.1875rem; */
+    object-fit: cover;
+}
+
+.product-details__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: .5rem;
+    /* width: 35rem; */
+    height: 31.25rem;
+    /* height: 25.1875rem; */
+}
+
+.product-details__info--title {
+    color: var(--gris-100);
+    font-size: 3.25rem;
+    font-weight: 500;
+}
+
+.product-details__info--price {
+    color: var(--gris-100);
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.product-details__info--description {
+    color: var(--gris-100);
+    font-size: 1rem;
+    font-weight: 400;
+}

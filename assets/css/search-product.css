@@ -1,0 +1,8 @@
+
+
+.category__name--notFound {
+    color: var(--gris-100);
+    font-size: 1.25rem;
+    font-weight: 500;
+    padding-top: 4rem;
+}

@@ -1,0 +1,64 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+}
+
+.footer__aboutUs {
+    display: flex;
+    justify-content: space-between;
+    padding: 4rem 9.5rem;
+    background-color: var(--azul-10);
+}
+
+.footer__aboutUs--logo{
+    width: 11rem;
+    height: 3.125rem;
+}
+
+.footer__aboutUs--list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.footer__aboutUs--list-item {
+    color: var(--gris-100);
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.footer__aboutUs--form {
+    display: flex;
+    flex-direction: column;
+    width: 35rem;
+    gap: .5rem;
+}
+
+.form__title {
+    color: var(--gris-100);
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.form__name--input {
+    /* height: 3.5rem; */
+    padding-top: .5rem;
+    padding-bottom: 2rem;
+    margin-bottom: .5rem;
+}
+
+.form__message--input {
+    padding-top: 1rem;
+    padding-bottom: 2.8125rem;
+}
+
+.footer__aboutDev {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: var(--gris-100);
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 2rem 9.5rem;
+}

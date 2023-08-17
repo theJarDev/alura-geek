@@ -1,0 +1,34 @@
+.addProduct {
+    display: flex;
+    justify-content: center;
+    background-color: var(--gris-05);
+    padding: 4rem 0;
+}
+
+.addProduct__form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.addProduct__form--title {
+    color: var(--gris-100);
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.addProduct__form--input {
+    width: 34.9375rem;
+    padding-top: 1rem;
+    padding-bottom: 1.25rem;
+}
+
+.addProduct__form--input-desc {
+    width: 34.9375rem;
+    padding-top: 1rem;
+    padding-bottom: 2.8125rem;
+}
+
+.addProduct__form--btn {
+    width: auto;
+}

@@ -1,0 +1,158 @@
+{
+  "admin": [
+    {
+      "email": "chris@gmail.com",
+      "password": "hola"
+    },
+    {
+      "email": "josebeliko@gmail.com",
+      "password": "caca"
+    }
+  ],
+  "products": [
+    {
+      "image": "https://i.pinimg.com/736x/e5/a8/7e/e5a87e6994369d60276fdbb29b7fce44.jpg",
+      "category": "Marvel",
+      "name": "Figura de acción Wolverine",
+      "price": "799",
+      "description": "Figura de acción Wolverine",
+      "id": "P8NBXzQ"
+    },
+    {
+      "image": "https://www.crazyplaza.pe/wp-content/uploads/2017/11/peluche-yoshi-manzana-mosaico.jpg",
+      "category": "Diversos",
+      "name": "Yoshi",
+      "price": "350",
+      "description": "peluche de yoshi",
+      "id": "y2S6VGI"
+    },
+    {
+      "image": "https://d3e3r3101xvs9k.cloudfront.net/ProductOriginalPhotos/Baby_Yoda_de_Star_Wars_Principal.jpg",
+      "category": "Diversos",
+      "name": "Peluche Baby Yoda",
+      "price": "400",
+      "description": "peluche de baby yoda",
+      "id": "duKE3fk"
+    },
+    {
+      "image": "https://www.distritomax.com/cdn/shop/files/01_4339a4cd-effa-4189-9bc6-3a47c8b73f74_600x800.jpg?v=1686325788",
+      "category": "Diversos",
+      "name": "Master Chief",
+      "price": "700",
+      "description": "Figura de acción de Master Chief",
+      "id": "gNnhPMz"
+    },
+    {
+      "image": "https://m.media-amazon.com/images/I/81tzRAuFH0L._AC_UF894,1000_QL80_.jpg",
+      "category": "Marvel",
+      "name": "Spiderman 2099 Funko Pop",
+      "price": "300",
+      "description": "Funko Pop Spiderman 2099",
+      "id": "or4qxax"
+    },
+    {
+      "image": "https://d3ugyf2ht6aenh.cloudfront.net/stores/001/214/983/products/20220806231429_1-26c541c20f2ed5eeef16602762568448-1024-1024.jpg",
+      "category": "Marvel",
+      "name": "Peluche Spiderman ",
+      "price": "300",
+      "description": "peluche de spiderman",
+      "id": "bJf1PdK"
+    },
+    {
+      "image": "https://akibaraxpress.com/cdn/shop/products/d053456cd361fe765f9e2fdb7e8e6308fe3a7baf_1024x.jpg?v=1550531688",
+      "category": "Diversos",
+      "name": "Llavero Harry Potter",
+      "price": "50",
+      "description": "Llavero Harry Potter",
+      "id": "vE3jRJy"
+    },
+    {
+      "image": "https://ae01.alicdn.com/kf/H400cd701815f48099e873c284482a47cw/Pok-mon-Pikachu-Big-mu-eco-de-peluche-Kawaii-sonrisa-juguete-de-peluche-amarillo-elfo-almohada.jpg",
+      "category": "Diversos",
+      "name": "Peluche Pikachu",
+      "price": "180",
+      "description": "peluche de pikachu",
+      "id": "aTQbci3"
+    },
+    {
+      "image": "https://akibaraxpress.com/cdn/shop/products/55dff2223b388e974c3a3b48eab3772e6e461c1e.jpg?v=1550524701",
+      "category": "Diversos",
+      "name": "Figura de acción de Link",
+      "price": "499",
+      "description": "Figura de acción de Link",
+      "id": "i0Muf2M"
+    },
+    {
+      "image": "https://gettoshopmx.com/cdn/shop/products/Social4_470x470_f54b866d-4285-4cff-a63a-1a7b24f93498.webp?v=1661970990&width=1445",
+      "category": "Marvel",
+      "name": "Figura de acción Spider-Man",
+      "price": "999",
+      "description": "Figura de acción Spider-Man No Way Home",
+      "id": "MXDJO4W"
+    },
+    {
+      "image": "https://miniso.ie/wp-content/uploads/2019/09/marvel-products2.jpg",
+      "category": "Marvel",
+      "name": "Estuche Lapicero Marvel",
+      "price": "150",
+      "description": "Estuche Lapicero Marvel varios colores",
+      "id": "8Vym1R9"
+    },
+    {
+      "image": "https://zonatronik.com/wp-content/uploads/2023/01/ZTFRI0000382.jpg",
+      "category": "Marvel",
+      "name": "Llavero IronMan",
+      "price": "150",
+      "description": "Llavero IronMan",
+      "id": "Zc6VfGk"
+    },
+    {
+      "image": "https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2023/04/ps5-3011390.jpg?tf=3840x",
+      "category": "Consolas",
+      "name": "PlayStation 5",
+      "price": "9499",
+      "description": "Consola de videojuegos de última generación PlayStation 5",
+      "id": "fHAgHUQ"
+    },
+    {
+      "image": "https://generacionxbox.com/wp-content/uploads/2022/09/Xbox-Series-X-940x529.jpg",
+      "category": "Consolas",
+      "name": "Xbox Series X",
+      "price": "9899",
+      "description": "Consola de videojuegos de última generación Xbox Series X",
+      "id": "F8zl7QR"
+    },
+    {
+      "image": "https://fs-prod-cdn.nintendo-europe.com/media/images/08_content_images/systems_5/nintendo_switch_3/nintendo_switch_oled/CI_NSwitch_main.jpg",
+      "category": "Consolas",
+      "name": "Nintendo Switch Oled",
+      "price": "4999",
+      "description": "Consola de videojuegos de última generación Nintendo Switch Oled",
+      "id": "Cb7de1x"
+    },
+    {
+      "image": "https://hips.hearstapps.com/hmg-prod/images/gh-oculus-64a5956f1fd6a.png?crop=0.463xw:0.926xh;0.287xw,0.0449xh&resize=1200:*",
+      "category": "Consolas",
+      "name": "Meta Quest 2",
+      "price": "7999",
+      "description": "Lentes de realidad virtual Meta Quest 2",
+      "id": "0d5aLuv"
+    },
+    {
+      "image": "https://ddtech.mx/assets/uploads/4b8777f132d0489e1261c4c9e669a073.png",
+      "category": "Consolas",
+      "name": "Control Xbox",
+      "price": "1099",
+      "description": "Control inalámbrico para Xbox",
+      "id": "48ZJcr8"
+    },
+    {
+      "image": "https://www.trecebits.com/wp-content/uploads/2022/08/mando-Nintendo-Switch-Pro.jpeg",
+      "category": "Consolas",
+      "name": "Control Pro Nintendo Switch",
+      "price": "1399",
+      "description": "Control Pro inalámbrico para Nintendo Switch",
+      "id": "u2BKdIN"
+    }
+  ]
+}
