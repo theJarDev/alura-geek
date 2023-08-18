@@ -10,7 +10,7 @@ const createCategory = (category) => {
     const content = `
         <div class="category__name" id="category-${counter}">
             <h3 class="category__name--title">${category}</h3>
-            <a href="screens/all_products_client.html" class="category__name--seeAll">
+            <a href="./screens/all_products_client.html" class="category__name--seeAll">
                 <div class="flex">
                 <p>Ver todo</p><img src="assets/arrow.svg" alt="flecha">
                 </div>
@@ -40,7 +40,7 @@ const createProduct = (image, name, price, id) => {
     const btn = product.querySelector('[data-seeProduct]');
 
     btn.addEventListener('click', () => {
-        window.location.href = `screens/product_details.html?id=${id}`;
+        window.location.href = `/screens/product_details.html?id=${id}`;
     });
 
     
