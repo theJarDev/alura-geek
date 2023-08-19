@@ -24,7 +24,7 @@ editForm.addEventListener('submit', event => {
     event.preventDefault();
     clientServices.updateProduct(url.value, category.value, name.value, price.value, description.value, id)
         .then(() => {
-            window.location.href = '/screens/all_products.html';
+            window.location.href = 'all_products.html';
         })
         .catch(err => console.log(err));
 });

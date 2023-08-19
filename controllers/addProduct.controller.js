@@ -25,7 +25,7 @@ productForm.addEventListener('submit', event => {
 
     clientServices.addProduct(url, category, name, price, description, id)
         .then(() => {
-            window.location.href = '/screens/all_products.html';
+            window.location.href = 'all_products.html';
         })
         .catch(err => console.log(err));
 });

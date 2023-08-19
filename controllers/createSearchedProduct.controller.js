@@ -18,7 +18,7 @@ const createProduct = (image, name, price, id) => {
     const btn = product.querySelector('[data-seeProduct]');
 
     btn.addEventListener('click', () => {
-        window.location.href = `/screens/product_details.html?id=${id}`;
+        window.location.href = `product_details.html?id=${id}`;
     });
 
     

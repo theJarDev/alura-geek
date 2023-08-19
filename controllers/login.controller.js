@@ -13,7 +13,7 @@ loginForm.addEventListener('submit', event => {
             data.forEach(admin => {
                 if (admin.email === email && admin.password === password) {
                     found = true
-                    window.location.href = '/screens/all_products.html';
+                    window.location.href = 'all_products.html';
                 }
             });
             if (!found) {

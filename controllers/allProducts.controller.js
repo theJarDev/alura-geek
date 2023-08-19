@@ -6,7 +6,7 @@ const createProduct = (image, name, price, id) => {
     product.classList.add('product');
     const content = `
         <div class="parent">
-            <a href="./update_product.html?id=${id}" class="edit__btn" data-edit><img src="../assets/img/edit.svg" alt=""></a>
+            <a href="update_product.html?id=${id}" class="edit__btn" data-edit><img src="../assets/img/edit.svg" alt=""></a>
             <button class="delete__btn" data-delete><img src="../assets/img/delete.svg" alt=""></button>
         </div>
         <img src="${image}" alt="${name}" class="product__image">
@@ -19,7 +19,7 @@ const createProduct = (image, name, price, id) => {
     deleteBtn.addEventListener('click', () => {
         clientServices.deleteProduct(id)
             .then(() => {
-                window.location.href = '/screens/all_products.html';
+                window.location.href = 'all_products.html';
             });
     });
     
