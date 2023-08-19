@@ -1,4 +1,4 @@
-import { clientServices } from "../service/client-service";
+import { clientServices } from "../service/client-service.js";
 
 
 const createProduct = (image, name, price, id) => {
