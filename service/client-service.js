@@ -1,15 +1,15 @@
 
-const adminInfo = () => fetch('http://localhost:3000/admin')
+const adminInfo = () => fetch('https://json-server-alura-geek.vercel.app/admin')
     .then((response) => response.json());
 
 // const adminInfo = () => fetch('http://localhost:3000/admins')
 //     .then((respuesta) => respuesta.json());
 
-const getProducts = () => fetch('http://localhost:3000/products')
+const getProducts = () => fetch('https://json-server-alura-geek.vercel.app/products')
     .then((response) => response.json());
 
 const addProduct = (url, category, name, price, description, id) => {
-    return fetch('http://localhost:3000/products', {
+    return fetch('https://json-server-alura-geek.vercel.app/products', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -19,11 +19,11 @@ const addProduct = (url, category, name, price, description, id) => {
 };
 
 
-const getSelectedProduct = (id) => fetch(`http://localhost:3000/products/${id}`)
+const getSelectedProduct = (id) => fetch(`https://json-server-alura-geek.vercel.app/products/${id}`)
     .then((response) => response.json());
 
 const updateProduct = (url, category, name, price, description, id) => {
-    return fetch(`http://localhost:3000/products/${id}`, {
+    return fetch(`https://json-server-alura-geek.vercel.app/products/${id}`, {
         method: 'PUT',
         headers: {
             'Content-Type': 'application/json'
@@ -33,7 +33,7 @@ const updateProduct = (url, category, name, price, description, id) => {
 };
 
 const deleteProduct = (id) => {
-    return fetch(`http://localhost:3000/products/${id}`, {
+    return fetch(`https://json-server-alura-geek.vercel.app/products/${id}`, {
         method: 'DELETE',
     });
 };
