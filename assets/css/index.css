@@ -10,7 +10,7 @@
 .banner__image {
     width: 100vw;
     height: 22rem;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 41.15%, rgba(0, 0, 0, 0.80) 100%), url(../img/Hero.svg), lightgray 50% / cover no-repeat;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.40) 41.15%, rgba(0, 0, 0, 0.90) 100%), url(../img/Hero.svg), lightgray 50% / cover no-repeat;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -20,6 +20,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    gap: 1rem;
     padding-bottom: 2rem;
 }
 
@@ -27,28 +28,28 @@
     color: var(--blanco-100);
     font-size: 3.25rem;
     font-weight: 700;
-    margin-bottom: 1rem;
 }
 
 .banner__content--description {
     color: var(--blanco-100);
     font-size: 1.375rem;
     font-weight: 700;
-    padding-bottom: 1rem;
 }
 
-/* .banner__contenido--btn {
-    width: auto;
-} */
+@media (max-width: 767px) {
+    .banner__image {
+        height: 12rem;
+    }
 
-/* 
-.banner__contenido {
-    color: #fdfdfd;
-    position: absolute;
-    left: 50%;
-    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.75);
-    top: 50%;
-    text-align: center;
-    transform: translate(-50%, -50%);
-    width: 100%;
-} */
+    .banner__content {
+        gap: 0.5rem;
+    }
+
+    .banner__content--title {
+        font-size: 1.375rem;
+    }
+
+    .banner__content--description {
+        font-size: 0.875rem;
+    }
+}

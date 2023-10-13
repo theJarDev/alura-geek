@@ -14,60 +14,73 @@
     <link rel="stylesheet" href="../assets/css/add-product.css">
 </head>
 <body>
-    <header class="header container">
-        <div class="header__content">
-          <div class="header__content--logo">
-            <img src="../assets/img/sports_esports_black_24dp 1.svg" alt="logo-mando">
-            <img src="../assets/img/Texto.svg" alt="logo-text">
-          </div>
-          <div class="header__content--search">
-            <input type="search" placeholder="¿Qué deseas buscar?" class="header__content--search--input" data-searchInput>
-            <button class="header__content--search--btn" data-searchBtn><img src="../assets/img/Icone.svg" alt="icono-buscar"></button>
-          </div>
+  <header class="flex-col">
+    <div class="bg -mt-15" data-mobileSearch>
+      <div class="mobile-search">
+        <input type="text" placeholder="¿Qué deseas buscar?" class="header__content--search--input" data-searchInput>
+        <button class="header__content--search--btn" data-searchBtn><img src="../assets/img/Icone.svg" alt="icono-buscar"></button>
+      </div>
+    </div>
+    <div class="header container">
+      <div class="header__content">
+        <a href="/">
+          <img class="header__content--logo" src="../assets/img/Logo.webp" alt="Logo">
+        </a>
+        <div class="header__content--search">
+          <input type="text" placeholder="¿Qué deseas buscar?" class="header__content--search--input" data-searchInput>
+          <button class="header__content--search--btn" data-searchBtn><img src="../assets/img/Icone.svg" alt="icono-buscar"></button>
         </div>
+      </div>
+      <div class="flex">
         <a href="all_products.html" class="header__loginBtn">Menú administrador</a>
-      </header>
-      <main>
-        <section class="addProduct">
-          <form class="addProduct__form" data-formProduct>
-            <h4 class="addProduct__form--title">Agregar nuevo producto</h4>
-            <input name="image" id="image" type="url" class="input addProduct__form--input" placeholder="URL de imagen" required data-url>
-            <input name="category" id="category" type="text" class="input addProduct__form--input" placeholder="Categoría" required data-category>
-            <input name="product-name" id="product-name" type="text" class="input addProduct__form--input" placeholder="Nombre del producto" required data-name>
-            <input name="product-price" id="product-price" type="number" class="input addProduct__form--input" placeholder="Precio del producto" required data-price>
-            <input name="description" id="description" type="text" class="input addProduct__form--input-desc" placeholder="Descripción del producto" required data-description>
-            <input type="submit" value="Agregar producto" class="button addProduct__form--btn">
-          </form>
-        </section>
-      </main>
-      <footer class="footer">
-        <div class="footer__aboutUs">
-          <img src="../assets/img/Logo-aluraGeek.png" alt="Logo AluraGeek" class="footer__aboutUs--logo">
-          <ul class="footer__aboutUs--list">
-            <li class="footer__aboutUs--list-item"><a href="#">Quienes somos</a></li>
-            <li class="footer__aboutUs--list-item"><a href="#">Política de privacidad</a></li>
-            <li class="footer__aboutUs--list-item"><a href="#">Programa de fidelidad</a></li>
-            <li class="footer__aboutUs--list-item"><a href="#">Nuestras Tiendas</a></li>
-            <li class="footer__aboutUs--list-item"><a href="#">Quiero ser franquiciado</a></li>
-            <li class="footer__aboutUs--list-item"><a href="#">Anúncie aquí</a></li>
-          </ul>
-          <form action="#" class="footer__aboutUs--form">
-            <h4 class="form__title">Hable con nosotros</h4>
-            <input name="name" id="name" type="text" class="input form__name--input " placeholder="Nombre">
-            <input name="message" id="message" type="text" class="input form__message--input" placeholder="Escribe tu mensaje">
-            <input type="submit" value="Enviar mensaje" class="button">
-          </form>
-        </div>
-        <div class="footer__aboutDev">
-          <p class="footer__aboutDev--info">
-            Desarrollado por Christopher González
-            <br>
-            2023
-          </p>
-        </div>
-      </footer>
-      <script type="module" src="../controllers/getSearchInfo.controller.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js" integrity="sha512-UNM1njAgOFUa74Z0bADwAq8gbTcqZC8Ej4xPSzpnh0l6KMevwvkBvbldF9uR++qKeJ+MOZHRjV1HZjoRvjDfNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-      <script type="module" src="../controllers/addProduct.controller.js"></script>
+        <button class="mobile-toggleBtn" data-toggleMobile><img src="../assets/img/Icone.svg" alt="buscar"></button>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="addProduct">
+      <form class="addProduct__form" data-formProduct>
+        <h4 class="addProduct__form--title">Agregar nuevo producto</h4>
+        <input name="image" id="image" type="url" class="input addProduct__form--input" placeholder="URL de imagen" required data-url>
+        <input name="category" id="category" type="text" class="input addProduct__form--input" placeholder="Categoría" required data-category>
+        <input name="product-name" id="product-name" type="text" class="input addProduct__form--input" placeholder="Nombre del producto" required data-name>
+        <input name="product-price" id="product-price" type="number" class="input addProduct__form--input" placeholder="Precio del producto" required data-price>
+        <input name="description" id="description" type="text" class="input addProduct__form--input-desc" placeholder="Descripción del producto" required data-description>
+        <input type="submit" value="Agregar producto" class="button addProduct__form--btn">
+      </form>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer__aboutUs">
+      <div class="footer__aboutUs--content">
+        <img src="../assets/img/Logo.webp" alt="Logo" class="footer__aboutUs--logo">
+        <ul class="footer__aboutUs--list">
+          <li class="footer__aboutUs--list-item"><a href="#">Quienes somos</a></li>
+          <li class="footer__aboutUs--list-item"><a href="#">Política de privacidad</a></li>
+          <li class="footer__aboutUs--list-item"><a href="#">Programa de fidelidad</a></li>
+          <li class="footer__aboutUs--list-item"><a href="#">Nuestras Tiendas</a></li>
+          <li class="footer__aboutUs--list-item"><a href="#">Quiero ser franquiciado</a></li>
+          <li class="footer__aboutUs--list-item"><a href="#">Anúncie aquí</a></li>
+        </ul>
+      </div>
+      <form action="#" class="footer__aboutUs--form">
+        <h4 class="form__title">Hable con nosotros</h4>
+        <input name="name" id="name" type="text" class="input form__name--input " placeholder="Nombre">
+        <input name="message" id="message" type="text" class="input form__message--input" placeholder="Escribe tu mensaje">
+        <button type="button" class="button">Enviar mensaje</button>
+      </form>
+    </div>
+    <div class="footer__aboutDev">
+      <p class="footer__aboutDev--info">
+        Desarrollado por Christopher González
+        <br>
+        2023
+      </p>
+    </div>
+  </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js" integrity="sha512-UNM1njAgOFUa74Z0bADwAq8gbTcqZC8Ej4xPSzpnh0l6KMevwvkBvbldF9uR++qKeJ+MOZHRjV1HZjoRvjDfNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script type="module" src="../controllers/addProduct.controller.js"></script>
+  <script type="module" src="../controllers/getSearchInfo.controller.js"></script>
+  <script type="module" src="../controllers/toggleMobileSearch.controller.js"></script>
 </body>
 </html>

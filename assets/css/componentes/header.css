@@ -1,8 +1,12 @@
-
+.flex-col {
+    display: flex;
+    flex-direction: column;
+}
 
 .header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding-top: 2rem;
     padding-bottom: 2rem;
 }
@@ -10,12 +14,11 @@
 .header__content {
     display: flex;
     align-items: center;
+    gap: 2rem;
 }
 
 .header__content--logo {
-    display: flex;
-    align-items: center;
-    margin-right: 2rem;
+    width: 11rem;
 }
 
 .header__content--search {
@@ -33,7 +36,7 @@
     font-size: .875rem;
     font-weight: 400;
     line-height: 1rem;
-    min-width: 23.0625rem;
+    width: 23.0625rem;
     border-radius: 1.25rem;
     /* border-radius: 1.25rem; */
 }
@@ -50,9 +53,109 @@
 }
 
 .header__loginBtn {
+    font-size: 1rem;
+    font-weight: 400;
     width: 11.375rem;
     text-align: center;
     color: var(--azul-100);
     border: 1px solid var(--azul-100);
     padding: 16px;
+}
+
+.mobile-toggleBtn {
+    display: none;
+}
+
+.mobile-search {
+    display: none;
+}
+
+@media (min-width: 768px) and (max-width: 1439px) {
+    .header {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    .header__content--search--input{
+        width: 17rem;
+    }
+
+    .header__content--logo {
+        width: 7.5rem;
+    }
+
+    .header__loginBtn {
+        font-size: 0.875rem;
+        font-weight: 600;
+        padding: 0.75rem 1rem;
+        width: 10.375rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .header{
+        gap: 0.5rem;
+    }
+
+    .header__content{
+        justify-content: space-between;
+        gap: 0.5rem;
+        /* width: 100%; */
+    }
+
+    .header__content--search {
+        display: none;
+    }
+
+    .header {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    .header__loginBtn {
+        font-size: 0.875rem;
+        font-weight: 600;
+        padding: 0.75rem 1rem;
+        width: 6rem;
+    }
+
+    .header__content--logo {
+        width: 7.5rem;
+    }
+
+    .mobile-toggleBtn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0.25rem;
+        border: 1px solid var(--gris-50);
+        background-color: var(--gris-05);
+        border-radius: 100%;
+    }
+
+    .mobile-search {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: var(--gris-05);
+        border-radius: 1.25rem;
+        padding: .5rem 1rem;
+    }
+
+    .flex {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .bg {
+        background-color: var(--azul-100);
+        padding: 0.75rem;
+        transition: margin-top 0.5s ease;
+    }
+
+    .-mt-15 {
+        margin-top: -3.75rem;
+    }
+
 }

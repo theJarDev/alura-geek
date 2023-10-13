@@ -1,6 +1,7 @@
 @import url(_reset.css);
 @import url(_variables.css);
 
+
 html {
     scroll-behavior: smooth;
 }
@@ -12,11 +13,12 @@ body {
 }
 
 .container {
-    padding-left: 9.5rem;
-    padding-right: 9.5rem;
+    padding-left: 7.5rem;
+    padding-right: 7.5rem;
 }
 
 .button {
+    text-align: center;
     color: var(--blanco-100);
     background-color: var(--azul-100);
     width: max-content;
@@ -45,4 +47,30 @@ button:hover {
 
 ::placeholder {
     color: var(--gris-50);
+}
+
+@media (min-width: 768px) and (max-width: 1439px) {
+    .container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    }
+    
+    .button {
+        padding: 0.75rem 1rem;
+        font-size: 0.875rem;
+        font-weight: 600;
+    }
+}
+
+@media (max-width: 767px) {
+    .container {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .button {
+        padding: 0.75rem 1rem;
+        font-size: 0.875rem;
+        font-weight: 600;
+    }
 }

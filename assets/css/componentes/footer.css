@@ -9,6 +9,15 @@
     justify-content: space-between;
     padding: 4rem 9.5rem;
     background-color: var(--azul-10);
+    gap: 7rem;
+}
+
+.footer__aboutUs--content {
+    display: flex;
+    justify-content: space-between;
+    width: calc(50% - 7rem);
+    /* gap: 7rem; */
+    /* width: 50%; */
 }
 
 .footer__aboutUs--logo{
@@ -32,6 +41,7 @@
     display: flex;
     flex-direction: column;
     width: 35rem;
+    /* width: 50%; */
     gap: .5rem;
 }
 
@@ -60,5 +70,43 @@
     color: var(--gris-100);
     font-size: 1rem;
     font-weight: 500;
-    padding: 2rem 9.5rem;
+    padding: 2rem;
+}
+
+@media (min-width: 768px) and (max-width: 1439px) {
+    .footer__aboutUs {
+        padding: 2rem;
+    }
+
+    .footer__aboutUs--content {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+}
+
+
+@media (max-width: 767px) {
+    .footer__aboutUs {
+        padding: 1rem;
+    }
+
+    .footer__aboutUs--content {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        text-align: center;
+        gap: 1rem;
+        width: auto;
+    }
+
+    .footer__aboutUs {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .footer__aboutUs--form {
+        width: auto;
+    }
 }
